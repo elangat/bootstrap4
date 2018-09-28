@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Basics</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		 
+
+		 	
+</head>
+<body>
+<h1 id="heading1"></h1>
+<h1 id="heading2"></h1>
+<h1 id="heading3"></h1>
+<p id="paragraph1"></p>
+<h1 id="sum"></h1>
+<h3 id="product"></h3>
+<h3 id="difference"></h3>
+
+<script type="text/javascript">
+		 	//rule based language
+		 	//how to display something in JS
+		 	//alert(3000)1st
+		 	//document.write(we care for you)2nd
+
+		 	alert(3000);
+		 	document.write("we care for you");
+		 	console.log("we are good")
+		 	//we find element by id
+		 	document.getElementById("heading1").innerHTML="Sports";
+		 	document.getElementById("heading2").innerHTML="My second Heading";
+		 	 document.getElementById("heading3").innerHTML="Basic JS";
+		 	 document.getElementById("paragraph1").innerHTML="This is my paragraph";
+
+		 	 //data storage
+		 	 //variables do store values
+		 	 //every js variable starts with 'var' keyword
+
+		 	 var x =78;
+		 	var y =60;
+
+		 		//Add them create a variable to store answer
+		 		var total = x + y;
+		 		
+		 		 document.getElementById("sum").innerHTML= total;
+
+		 		 //multiply
+		 		 var product = x*y;
+		 		 document.getElementById("product").innerHTML= product;
+
+		 		 //subtract
+		 		 var difference = x-y;
+		 		 document.getElementById("difference").innerHTML=difference;
+
+		 		 //divide
+		 		 //above we used HTML elements using JS
+
+
+		 	
+		 </script>
+
+
+</body>
+</html>

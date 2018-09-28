@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css"
+	 href="css/bootstrap.css">
+</head>
+<body>
+	<a href="index.html" class="btn btn-info">Back Home</a>
+	<br><br>
+
+	<section class="row container" >
+		<div class="col-md-6">
+			<form>
+			    <!--Provide ids for each element or tag-->
+			    <div class="text-primary ">*Required Field</div>
+				<input type="email" placeholder="Your Email"
+				 class="form-control" id="email"><br>
+				 <div id="error1" class="text-danger"></div><br>
+
+				 <div class="text-primary">*Required Field</div>
+				<input type="text" placeholder="Your First Name"
+				 class="form-control" id="name1"><br>
+				 <div id="error2" class="text-danger"></div><br>
+
+				 <div class="text-primary">*Required Field</div>
+				<input type="text" placeholder="Your Sir Name"
+				 class="form-control" id="name2"><br>
+				 <div id="error5" class="text-danger"></div><br>
+
+				 <div class="text-primary">*Required Field</div>
+				<input type="phone" placeholder="Your Phone Number"
+				 class="form-control" id="phone"><br>
+				 <div id="error4" class="text-danger"></div><br>
+
+				 <div class="text-primary">*Required Field</div>
+				<textarea cols="10" rows="5" 
+				class="form-control" id="message"></textarea><br>
+				<div id="error3" class="text-danger"></div>
+				
+				<div id="error6" class="text-danger"></div>
+
+				<button type="button" class="btn btn-info" onclick="validateForm()">
+				SEND MESSAGE</button>
+			</form>
+		</div><!--End colm-->
+
+		<div class="col-md-6">
+			
+
+		</div><!--End colm-->
+		
+	</section>
+
+		<script type="text/javascript">
+			//JS functions Categorize your program into blocks
+			//in programming A function does some task
+			//below function validates our first form
+			//A function name is defined by the developer
+			//CamelCase-AddNumbers, ValidateForm
+			//snakeCase-addNumbers, validateForm
+			function validateForm()
+			{
+				//capture email,name,message store in respective variables
+				var email=document.getElementById("email").value;
+				var name1=document.getElementById("name1").value;
+				var name2=document.getElementById("name2").value;
+				var message=document.getElementById("message").value;
+				var phone=document.getElementById("phone").value;
+
+				//Decision making , if statements
+				if (email=="") {
+					document.getElementById("error1").innerHTML=
+					"Required Email ,Enter your Email";
+
+				}
+				if (name=="") {
+					document.getElementById("error2").innerHTML=
+					"Name is Requred";
+
+				 }
+				if (message=="") {
+					document.getElementById("error3").innerHTML=
+					"Message Cannot Be Empty";
+
+				  }
+
+				  if (phone=="") {
+					document.getElementById("error4").innerHTML=
+					"Phone Number Cannot Be Empty";
+
+				   }
+
+				   if (message=="") {
+					document.getElementById("error5").innerHTML=
+					"Sir Name Required";
+
+				    }
+
+				    if (message.length<20){
+
+				    	document.getElementById("error6").innerHTML=
+				    	"Message Too Short"
+				     }
+			}	//Function ends here
+
+		</script>
+
+</body>
+</html>

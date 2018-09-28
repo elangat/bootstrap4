@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payroll</title>
+		<link rel="stylesheet" type="text/css"
+	 href="css/bootstrap.css">
+</head>
+<body>
+	<h1 class="alert alert-primary">My Payroll</h1>
+
+	<section class="row">
+		<div class="col-md-6">
+			<form>
+				<input type="number" placeholder="Basic Salary" 
+				class="form-control" id="basic"/><br>
+
+				<input type="number" placeholder="Your Water Allowance" 
+				class="form-control" id="water"/><br>
+
+				<input type="number" placeholder="Your Health Allowance" 
+				class="form-control" id="health"/><br>
+
+				<input type="number" placeholder="Your NSSF Deducted" 
+				class="form-control" id="nssf"/><br>
+
+				<button type="button" class="btn btn-danger" onclick="computepayroll();">Get Your
+				 NetPay</button><br>
+				 <div id="error" class="text-danger"></div>
+				  <div id="result" class="text-primary"></div>
+
+
+			</form>
+			
+
+		</div>
+
+		<div class="col-md-6">
+		<h2>Currency Converter</h2>
+		<form>
+				<input type="number" placeholder="Amt in Ksh" 
+				class="form-control" id="ksh"/><br>
+
+
+				<input type="number" placeholder="Currency To Convert To usd" 
+				class="form-control" id="usd"/><br>
+				<button type="button" class="btn btn-danger" onclick="convertusd();">Convert</button><br>
+				<div id="usdrs" class="text-primary"></div><br>
+
+				<input type="number" placeholder="Currency To Convert To yen" 
+				class="form-control" id="yen"/><br>
+				<button type="button" class="btn btn-danger" onclick="convertyen();">Convert</button><br>
+				<div id="yenrs" class="text-primary"></div>	<br>
+
+				<input type="number" placeholder="Currency To Convert To gpp" 
+				class="form-control" id="gpp"/><br>
+				<button type="button" class="btn btn-danger" onclick="convertgpp();">Convert</button><br>
+				<div id="gpprs" class="text-primary"></div>
+
+				
+
+				
+					
+				  
+
+
+			</form>
+
+		
+
+		</div>
+	</section>
+	<script type="text/javascript">
+		function computepayroll(){
+			//Your Logic Goes here..
+			var basic=document.getElementById("basic").value;
+			var water=document.getElementById("water").value;
+			var health=document.getElementById("health").value;
+			var nssf=document.getElementById("nssf").value;
+			//check if they are empty
+			//Operators Arithmetics: +, -, /, *
+			//comparison operators: <, >, >=, <=, ==, !=
+			//Logical Operators: &&, ||, !?(Not)
+			if (basic==""|| water==" " || health=="" || nssf=="") {
+				document.getElementById("error").innerHTML=
+				"You Must Fill all Fields";
+			}
+
+			else{
+				//do maths
+				//convert to integer
+				var convertedbasic = parseInt(basic);
+				var convertedwater = parseInt(water);
+				var convertedhealth = parseInt(health);
+				var convertednssf = parseInt(nssf);
+
+				var answer = (convertedbasic+convertedwater+convertedhealth)-
+				convertednssf;
+				 document.getElementById("error").innerHTML="Your NetPay Will Be:"+answer;
+			}
+
+
+
+
+		}//End
+
+
+
+
+	</script>
+	<script type="text/javascript">
+
+		function (convertusd) {
+
+			var ksh=document.getElementById("ksh").value;
+			var usd=document.getElementById("usd").value
+			var yen=document.getElementById("yen").value;
+			var gpp=document.getElementById("gpp").value;				
+
+		}
+
+
+		if (ksh==""|| usd==" " || yen=="" || gpp=="") {
+				document.getElementById("pree").innerHTML=
+				"You Must Enter value greater than one";
+
+			}
+				
+				else{
+				//do maths
+				//convert to integer
+				var convertedksh = parseInt(ksh);
+				var convertedusd = parseInt(usd);
+				var convertedyen = parseInt(yen);
+				var convertedgpp = parseInt(gpp);
+
+				var answer =newamount * 100;
+				 document.getElementById("usdrs").innerHTML="Your Amount Is:"+answer;
+			}
+
+		
+
+
+
+	</script>
+
+
+
+</body>
+</html>

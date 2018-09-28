@@ -1,0 +1,236 @@
+
+
+
+    h1{
+      color: #000000;
+      font-weight: bold;
+    }
+
+      #top{
+
+      background-color: #eef2f3;
+      color: #24fe41;
+      font-style: italic;
+      text-decoration: underline;
+
+      }
+
+      .carousel-inner img{
+
+      width: 100%;
+      height:550px;
+      background-size: contain;
+      background: #000;
+
+
+      }
+      .overlay {
+        border-image-repeat: no-repeat;
+        background-size: contain;
+        height: 700px;
+        background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* bottom, image */
+    url(images/f1.jpg);
+    background-size: contain;
+      }
+      #two{
+        color: #eb3349;
+
+      }
+      #bottom{
+          background-color: grey;
+      }
+      #jk{
+        background-color: #000000;
+        border-style: inset;
+        border-color: grey;
+        color: #ffffff;
+        border-width: 7px;
+ 
+      }
+      #cr1{
+        color: #ffffff;
+        font-weight: bold;
+      }
+      #pr{
+        color: red;
+      }
+      fieldset { 
+         display: block;
+           margin-left: 25px;
+           margin-right: 25px;
+           padding-top: 1%;
+           padding-bottom: 1%;
+           padding-left: 0.9%;
+           padding-right: 0.9%;
+             border: 10px groove (internal value);
+}
+    #ft1{
+      font-size:26px;
+      padding-top: 3%;
+      padding-right 3%;
+
+    }
+      /* Styles for wrapping the search box */
+
+  .main {
+    width: 50%;
+    margin: 50px auto;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+  .has-search .form-control {
+    padding-left: 1%;
+  }
+
+    .has-search .form-control-feedback {
+     position: absolute;
+     z-index: 2;
+     display: block;
+     width: 2%;
+     height: 2%;
+     line-height: 2%;
+     text-align: center;
+     pointer-events: none;
+     color: #aaa;
+}
+  #search{
+    width: 50%;
+    height: 30%;
+
+  }
+  #form{
+    padding-left: 5%;
+    float: left;
+  }
+
+  #gh{
+    color: red;
+  }
+
+
+
+
+
+/*@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+.cabecera {
+    width: 100%;
+    height: 120px!important;
+    float: left;
+    margin-bottom: -60px;
+}
+figure.card4 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  min-width: 380px;
+  max-width: 380px;
+  width: 100%;
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #CCC;
+}
+figure.card4 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+figure.card4 .image {
+  width: 50%;
+  overflow: hidden;
+  z-index: 1;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+figure.card4 .image img {
+  position: relative;
+  display: block;
+  left: -0%;
+  z-index: 1;
+  padding: 5px;
+  width: 60%;
+}
+figure.card4:before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 45%;
+}
+figure.card4 figcaption {
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 100%;
+}
+figure.card4 figcaption img {
+    margin-bottom: -20px;
+}
+figure.card4 figcaption h2,
+figure.card4 figcaption p {
+  margin: 0;
+  text-align: right;
+  padding: 10px 0;
+  width: 100%;
+}
+figure.card4 figcaption h2 {
+  font-size: 1.3em;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+figure.card4 figcaption h2 span {
+  font-weight: 800;
+}
+figure.card4 figcaption p {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+figure.card4 figcaption .icons {
+  width: 100%;
+  text-align: right;
+}
+figure.card4 figcaption .icons i {
+  font-size: 20px;
+  padding: 5px;
+  top: 50%;
+  opacity: 0;
+}
+figure.card4 .position {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  padding: 15px 30px;
+  font-size: 0.9em;
+  opacity: 1;
+  font-style: italic;
+  color: #ffffff;
+  background: #000000;
+}
+figure.card4.blue .position {
+  background: #20638f;
+}
+figure.card4.red .position {
+  background: #962d22;
+}
+figure.card4.yellow .position {
+  background: #bf6516;
+}
+figure.card4:hover figcaption,
+figure.card4.hover figcaption {
+  bottom: 40px;
+}
+figure.card4:hover .icons i,
+figure.card4.hover .icons i {
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}*/
